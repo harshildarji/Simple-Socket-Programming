@@ -29,6 +29,8 @@ public class Server {
             out.flush();
             
             //Closing the connection.
+            in.close();
+            out.close();
             s.close();
         }
         catch(IOException e){

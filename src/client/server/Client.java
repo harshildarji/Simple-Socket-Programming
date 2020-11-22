@@ -31,6 +31,8 @@ public class Client {
             System.out.println("");
             
             //Closing the connection.
+            in.close();
+            out.close();
             s.close();
         }
         catch(IOException e){
